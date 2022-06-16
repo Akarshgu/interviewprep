@@ -1,0 +1,975 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="./script.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h3>Day1</h3>
+  <ol type="1">
+      <li><b>What is JS?</b></li>
+   <ul>
+    <li>js is a syncronours language and single threaded lang.</li>
+    <li>Synchronous lanaguage means the complete code will be executed line by line</li>
+      <li>Single Threaded language means once the error occurs then the execution will stop at that line itself.</li>
+    
+    <li>
+         js  that enables u to create dynmic updates content,multimedia
+           control or animated images and give the behaviour to html and css</li>
+  </ul>
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+  <li><b>what is JS engine.</b></li>
+  <ul>
+    <li>JS Engine is a Software component that executs js script code into the browser.</li>
+    <li>JS engine is a program which gets used to execute the JS code. 
+      All the browsers have their own JS engine. But out of all the most
+       famous one is V8 engine provided by Google chrome. 
+      Internet Explorer has Chakra Mozilla Firefox has Spider Monkey</li> 
+    </ul>
+
+    --------------------------------------------------------------------------------------------------------------------------------------
+  <li><b>What are the diff. between var , let , const</b></li>
+  <ul>
+      <li>
+          we have 3 types of declaring a variable that is var let and const.
+      </li>
+      <li>
+          as var is a global scope or functon scope . during memory allocation it is present in global execution context.
+          and it can be redeclare or reassigned the value and can be modiefied.
+      </li>
+      <li> where as let and const are block scope or during memory allocation it is in temporal deadzone. </li>
+      <li>and in let we can't reassign nither redeclare the value.</li>
+  </ul>
+
+  ------------------------------------------------------------
+  <li><b>what is temporal deadzone</b></li>
+  <ul>
+    <li>The Temporal Dead Zone is a behavior in JavaScript that occurs when 
+      declaring a variable with the let and const keywords, but not with var.</li>
+      <li>
+          The let and const variables are not accessible before they are initialized with some value, and the phase between the starting of
+           the execution of block in which the let or const variable is declared till that variable is being initialized 
+      </li>
+  </ul>
+
+  ------------------------------------------------------------
+  <li><b>what is hoisting?</b></li>
+  <ul>
+    <li><li>Hoisting is a JavaScript mechanism where variables, function declarations and classes are moved to the top of their scope before code execution.</li></li>
+      <li>
+  <pre>
+  hoisting is a process where the program is not executed and 
+  only memory is allocated to a function and variables 
+  So all variables are undefined as it moves to thr top of their scope 
+</pre>
+      </li>
+  </ul>
+
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+  <li><b>What is arrow function</b></li>
+  <ul>
+    <li>An arrow function is a shorter syntax for a function expression and does not have its own this, arguments, super, or new.target.</li>
+      <li>
+          Arrow function is also called as fat arrow function.
+          the arrow function is introduced in es6 
+          It allows us to create functions in a cleaner way compared to regular functions.
+          if we have only one parameter so we can omit curly braces and return keyword and function.
+          and it is easy to read as it syntax is small.
+  </li>
+  </ul>
+
+
+
+  <h3>DAy2</h3>
+      <li><b>What is type of operator?</b></li>
+      <ul>
+        <li>Typeof in JavaScript is an operator used for type checking and returns the data
+           type of the operand passed to it.</li>
+        <li>
+          The typeof operator is a unary operator that is placed before its single operand, which can be of any type.
+           Its value is a string indicating the data type of the operand.  The typeof operator evaluates to "number", "string" or "boolean" 
+          if its operand is a number, string, or boolean value and returns true or false based on the evaluation.
+          
+      </li></ul>
+   
+      <li><b>== and === diff.</b></li>
+      <ul><li>
+      == to campare the value betweentwo variables irrespective of the datatype of variable
+      it  checks whether the operand are equals or not.
+          
+     </li>
+      <li>
+         === is  it compare & check the datatype of variable if both are
+           same then it will gives us bolleans value
+          it is strict equals to .
+      </li>
+      <li>Two Boolean operands are strictly equal if both are true or both are false.</li>
+      <li>=== =>Two objects are strictly equal if they refer to the same Object.</li>
+  </ul>
+
+  <li> <b>undefine and null?</b></li>
+  <ul>
+    <li>Type of undefined is undefined.</li>
+  <li>  undefined means  a variable has been declared but has not yet been assigned a value.</li>
+  <li>The undefined value is a primitive value, which is used when a variable has not been assigned a value.</li>
+  <li>Type of null is object.</li>
+  
+  <li>	The null value is a primitive value which represents the null, empty, </li>
+  <li>It can be assigned to a variable which indicates that a variable does not point any object.</li>
+
+</ul>
+<li><b>what is NAN</b></li>
+<ul><li>NaN in JavaScript stands for Not a Number. It is the result of numerical operations, where result is not a number.</li>
+  <li> It is represented by a special property of the global object with the name NaN.</li></ul>
+
+
+<li><b>what is function?</b></li>
+<ul><li>
+A JavaScript function is a block of code designed to perform a particular task.</li>
+<li>A JavaScript function is executed when "something" invokes it (calls it).
+</li>
+<li>
+Function parameters are listed inside the parentheses () in the function </li>
+<li>Function arguments are the values received by the function when it is invoked.</li></ul>
+
+
+
+<li>what is anonymous function?</li>
+<ul>
+<li>anonymous function are hose funtion which doesnoy have their function name.</li>
+<li> An anonymous function can also have multiple arguments, but only one expression.</li>
+<li>as the anonymous function is stored in another variable and then invoke by  variable.</li>
+</ul>
+<li>what is IIFE?</li>
+<ul><li>
+An Immediately Invoked Function Expression (IIFE for short) is a JavaScript function that is immediately invoked as soon as it's evaluated by the JavaScript runtime.
+</li>
+<li> the primary reason to use an iife is to obtain data privazcy</li>
+<pre>IIFE creation and execution.
+(function() { console.log("Welcome to GFG!"); })();</pre></ul>
+
+<li>HIGHER order function?</li>
+<ul>
+<li>higher order function are those function which takes a function as an a arguments and return a function as a result</li>
+</ul>
+<li>What is 1st class function?</li>
+<ul>
+<li>First-Class Function: A programming language is said to have First-class functions if functions in that language are treated like other variables.</li>
+<li>So the functions can be assigned to any other variable or passed as an argument or can be returned by another function.</li>
+</ul>
+<li><b>what is function Expressions?</b></li>
+<ul>
+<li>
+  There is another syntax for creating a function that is called a Function Expression.
+
+  It allows us to create a new function in the middle of any expression.
+  
+  For example:
+  <pre>
+  let sayHi = function() {
+    alert( "Hello" );
+  };
+</pre></li>
+</ul>
+
+
+  <h3>Day3</h3>
+
+    <li><b>what is pure function?</b></li>
+    <ul>
+      <li>pure function are those which gives us same output for the same input everytime.</li>
+<pre>
+A pure function will have the following properties
+
+It depends only on its own arguments.
+
+It wont try to change variables out of its scope.
+
+It doesn't produce any side effects.
+</pre>
+    </ul>
+<li><b>what is callback function</b>?</li><ul>
+<li><pre> callback is a function passed as an argument to another function
+
+This technique allows a function to call another function
+
+A callback function can run after another function has finished</pre></li></ul>
+
+
+<li><b>what is generator function?</b></li>
+<ul><li>
+A generator function is the same as a normal function,
+ but whenever it needs to generate a value it uses the 'yield' keyword rather than 'return'. 
+</li>
+<li>A generator is a function that can stop midway and then continue from where it stopped.</li>
+<li> a generator appears to be a function but it behaves like an iterator.</li>
+
+<li>The 'yield' keyword halts the function execution and sends a value back to the caller</li></ul>
+
+<li>what are operators?</li>
+<ul><li>
+operators are symbols that are used to perform operations on operands.
+</li>
+<li>as we have 
+<pre>Arithmetic Operators
+  Comparison (Relational) Operators
+  Bitwise Operators
+  Logical Operators
+  Assignment Operators
+  Special Operators</pre>
+</li></ul>
+
+<li><b>what is clouser?</b></li>
+<ul><li>
+closure are those functions bundles together with environment with reference to its lexical environment.
+</li>
+<li>It is an inner function that has access to the outer or enclosing function’s variables. The closure has three scope chains. i. Own scope where variables defined between its curly brackets ii. Outer function’s variables iii. Global variables.</li>
+<pre>
+function makeFunc() {
+  var name = 'Mozilla';
+  function displayName() {
+    alert(name);
+  }
+  return displayName;
+}
+
+var myFunc = makeFunc();
+myFunc();
+</pre></ul>
+<li><b>what is function currying?</b></li>
+<ul>
+<li>Currying is a technique in functional programming that performs the transformation of a
+   function with multiple arguments into several functions containing a single argument in a sequence.</li>
+   <li><pre>
+    function calculateVolume(length) {
+      return function (breadth) {
+         return function (height) {
+            return length * breadth * height;
+         }
+      }
+   }
+   console.log("Volume of the container is:" + calculateVolume(4)(5)(6));
+   </pre></li>
+</ul>
+<li>to delete a character</li>
+<pre>
+function Remove(){
+  let name="akarsh"
+  console.log(name.slice(1))
+ 
+   }
+   Remove()
+</pre>
+<li><b>weakset and weakmap</b></li>
+<ul>
+  <li>Weakset in js is used to store a collection of object.  </li>
+  <li>the major diif. of a weakset with the set is that a weakset is a collection of objects and not values of some particular type.</li>
+<li>we have three types of methods in weakset such as add(),delete()and has() </li>
+<li>add() method used to add a new object to the end of an object</li>
+<li> deletemethod is to delete a object from the weakset obj.</li>
+<li>has method is used to check whether the obj. is present in the weakset obj. element.</li>
+<li>The syntax would be as follows, new WeakSet([iterable]);</li>
+<li><b>Weakmap()</b> is a collection of kley value pairs whose keys must be obj.,with values of any js.type,and does not 
+create strong reference to its keys.</li>
+<li> The syntax is looking like as below, new WeakMap([iterable]); </li>
+<pre>
+var obj=new Obj();
+
+var objone={};
+var objtwo={};
+
+obj.add(objone);
+console.log("objone add")
+
+obj.add(objtwo);
+console.log("objtwo add")
+
+
+console.log("weakset has objtwo add"+ obj.has(objtwo))
+
+obj.delete(objone);
+console.log("deleted objone")
+
+</pre>
+
+</ul>
+
+<li>what is diff. between map and foreach</li>
+<ul><li>
+  the main diff. between map and foreach is that the map method returns a new array by applying the callback function on each element of an array .
+</li>
+<li>while for each updates the array .</li>
+<li>and map is chainable but foreach is not chainable</li>
+
+
+</ul>
+
+
+<h3>day4</h3>
+
+
+<li><b>diff. bet. filter and find</b></li>
+<ul>
+<li>The find() method returns the first value that matches from the collection. Once it matches the value in findings,
+   it will not check the remaining values in the array collection.</li>
+<li>The filter() method returns the matched values in an array from the collection.
+   It will check all values in the collection and return the matched values in an array.</li>
+</ul>
+<li><b>What is Prototype and Prototype Chaining</b></li>
+<ul>
+<li>Prototype:: An object's prototype ,object may also have a prototype object, which it inherits methods and properties from, and so on. This is often referred to as a prototype chain, and explains why different objects have properties and methods defined on other objects available to them. </li>
+<li>Prototype chaining:: It is used to build new types of objects based on existing ones. It is similar to inheritance in a class based language.</li>
+<li>prototype chaining are those obj from which other obj inherited its properties.</li>
+</ul>
+<li><b>What is Call apply bind method</b></li>
+<ul>
+<li>call and apply is used to rebind the value of "this" to another object. and it is executed directly</li>
+<li>the only difference is that in call we pass arguments inform of , and in apply we gine in form of array</li>
+<li>and bind methods returns me a function with the new value of this.</li>
+</ul>
+
+
+<li><b>window object v/s document object</b></li>
+<ul>
+<li>the window is the first thing that gets loaded into the browser.</li>
+<li>The document object is your html, aspx, php, or other document that will be loaded into the browser. 
+  The document actually gets loaded inside the window object and has properties available to it like title, URL, cookie, etc.</li>
+</ul>
+
+
+<li><b>Difference between Splice and slice</b></li>
+<ul>
+<li>The method slice in JavaScript is used to copy pieces of an array.</li>
+<li>The method slice() takes two arguments: the start index where you will start copying and the end index where the copying ends. The second argument is not included,
+ which means when you copy an array from index 1 to index 5, it will only copy from index 1 to index 4.</li>
+
+<li>The method splice() is used to add and remove elements from an array in JavaScript. Unlike slice , the method splice mutates the original array. It returns removed elements in a new array.</li>
+<li>
+The first parameter (start) specifies the index where an element should be inserted or removed.
+The second parameter specifies the total number of elements to be removed starting from the start index provided.
+The third parameter specifies the element you want to add(to the array).
+</li>
+
+</ul>
+<li>execution context is an abstract concept that holds information about the environment whare the code is being executed and there is two ways of execution code sauch as global and function exection context
+</li>
+
+<h3>
+  
+</h3>
+
+
+  <li><b>What are callbacks and why do we use it</b></li>
+  <ul><li>A JavaScript callback is a function which is to be executed after another function has finished execution.</li>
+  <li>We need callback functions because many JavaScript actions are asynchronous, 
+    which means they don't really stop the program (or a function) from running until they're completed, as
+     you're probably used to. Instead, it will execute in the background while the rest of the code runs.
+
+  </li>
+
+
+
+  
+  
+  </ul>
+  <pre>
+    function greet(name, callback) {
+      console.log('Hi' + ' ' + name);
+      callback();
+  }
+  
+  function callMe() {   // callback function
+  
+      console.log('I am callback function');
+  }
+  
+  greet('Peter', callMe); 
+  </pre>
+  <li><b>What are the different types of errors in javascript
+    "Load time error  
+    Run time error "</b></li>
+    <ul><li>
+
+      Errors are statements which don't let the program run properly. There are three main types of errors that can occur while compiling a JavaScript program. These errors include syntax errors, runtime errors, and logical errors.
+    </li>
+  <li>1. Syntax Errors (most common)
+    Incorrect syntax raises parsing errors and occur at the interpretation time. Simple example is to introduce a semicolon where a double-colon it's needed.</li>
+  <li>let exObj = { name; 'Rick' }</li>
+  <li>2. Runtime Errors</li>
+    <li> Occur after the compiler interpret the code, when the code ran. Also known as exceptions. It can occur by calling a function that It wasn't declared.
+    </li>
+    <pre>
+      callingfunction();//without creating function
+    </pre>
+    <li>The syntax is correct but the function is not present.</li>
+    <li>// calling not declared function
+      doSomeStuff()</li>
+
+<li> logical error ..this type of error causes unusual results for the code.it is very difficult to find error as compare to others because compiler doesn't indicates the error.</li>
+      <li>logic errors are those which are correct in syntax but have some logically incoreect like </li>
+
+
+      <li>we have 
+        <pre>function average(a,b){
+          return a+b/2;
+
+        }
+      average(2,4);
+      
+      </pre></li>
+  </ul>
+<li><b>Can you explain why we use async-await</b></li>
+<ul><li>
+Async/await is actually just syntax sugar built on top of promises. It cannot be used with plain callbacks 
+
+
+</li>
+<li>Async/await is, like promises, non-blocking.</li>
+<li>Async/await makes asynchronous code look and behave a little more like synchronous code.</li>
+<pre>
+
+function printLetter(letter) {
+return new Promise((resolve, reject) => {
+    setTimeout(() => {
+        // console.log(letter)
+        resolve(letter)
+    }, 1000)
+})
+}
+
+
+async function prinAlphabets() {
+let ans1 = await printLetter('A')
+console.log(ans1)
+console.log('Before B gets resolved')
+let ans2 = await printLetter('B')
+console.log(ans2)
+console.log('Before C gets resolved')
+let ans3 = await printLetter('C')
+console.log(ans3)
+}
+
+prinAlphabets()
+
+</pre>
+
+</ul>
+<li><b>What are Promises and why do we need them?</b></li>
+<ul>
+<li>Promises are used to handle asynchronous operations in JavaScript. They are easy to manage when dealing with multiple asynchronous operations where callbacks can create callback hell leading to unmanageable code. </li>
+<li> it takes two arguments resolve and reject</li>
+<li>if the promise is resolved then it wil go to resolved and if promise is reject then it go to rejected promises.</li>
+<pre>
+
+// function promisess(num){
+//        return new Promise((resolve,reject)=>{
+//            setTimeout(()=>{
+//                console.log(num);
+//                resolve('promise done')
+//            },1000)
+//        })
+//     }
+//     promisess("1").then(()=>promisess("2")).then(()=>promisess("3")).then(()=>promisess("4"))
+//     .then(()=>promisess("5")).then(()=>promisess("6")).then(()=>promisess("7"))
+</pre>
+</ul>
+
+<li><b>calback hell</b></li>
+<ul><li>Callback hell is a concept that affects a JavaScript developer when he tries to perform various callbacks function one after the other.</li></ul>
+<pre>
+
+// let Hell = () => {
+//        setTimeout(()=>{
+//            console.log("1");
+//             setTimeout(()=>{
+//               console.log("2");
+//                setTimeout(()=>{
+//                   console.log("3");
+//              },1000)   
+//          },1000)
+//      },1000)
+//     }
+//     Hell() 
+</pre>
+
+
+<li><b>es5and es6</b></li>
+<ul>
+<li>In ES5, there is a one way of defining variables using var keyword. But ES6 has introduced two more ways of defining variables using keywords let and const.</li>
+<li>
+ES5 uses require keyword while ES6 uses import keyword.
+</li>
+
+
+</ul>
+<pre>
+var fullName = 'John Moore';
+var age = 25;
+var gender = 'Male';
+var city = 'London'
+// ES5
+var student = { fullName: fullName, age: age, gender: gender, city: city };
+// ES6
+var student = { fullName, age, gender, city };
+</pre>
+<li><b>Explain the difference setTimeout and setInterval function and write its syntax</b></li>
+<ul><li>
+setTimeout allows us to run a function once after the interval of time.
+</li>
+<li>All arguments have the same meaning. But unlike setTimeout it runs the function not only once, but regularly after the given interval of time.
+
+To stop further calls, we should call clearInterval(timerId).</li>
+<li><pre>
+function sayHi() {
+  alert('Hello');
+}
+
+setTimeout(sayHi, 1000);
+</pre></li>
+<li>
+setInterval allows us to run a function repeatedly, starting after the interval of time, then repeating continuously at that interval.
+</li>
+<li>
+<pre>
+  // repeat with the interval of 2 seconds
+let timerId = setInterval(() => alert('tick'), 2000);
+
+// after 5 seconds stop
+setTimeout(() => { clearInterval(timerId); alert('stop'); }, 5000);
+</pre>
+</li></ul>
+<li><b>diff. between callbackhell and promises</b></li>
+<ul><li>Promises are used to handle asynchronous operations in JavaScript. They are easy to manage when dealing with multiple asynchronous operations where callbacks can create callback hell leading to unmanageable code. and callback hell make a pyramid like structure</li></ul>
+<li><b>what is event loop</b></li>
+<ul>
+<li>The Event Loop is a queue of callback functions.
+   When an async function executes, the callback function is pushed into
+    the queue. whenever the function stack becomes empty.</li>
+<pre></pre>
+<li>The event loop is a constantly running process that monitors both the callback queue and the call stack. If the call stack is not empty, the event loop waits until it is empty and places the next function from the callback queue to the call stack. If the callback queue is empty, nothing will happen:</li>
+</ul>
+</ol>
+
+
+
+
+
+
+
+  ----------------------------------------------------------------------------------------------------------------------------------------------
+<h1>React</h1>
+  <ol type="1">
+<li><b>Q1:What is Virtual DOM </b></li>
+<ul>
+  <li>DOM is a document object model, created by converting HTML CSS and JS Real DOM, which is an object which gets created whenever any React application gets loaded on the screen for the first time., whenever React components gets mounted on the screen for the first time. Now when any user makes any changes on the screen like button click because of which the state variable will get updated so in this case the changes will not directly go to Real DOM , instead in react we have concept known Virtual DOM.</li>
+<li>So we are having two virtual doms, one virtual dom gets created at the time of mounting of react component so it is a copy of your real dom. Another virtual dom is the dom which contains the new changes, updated state variables values. Now these two virtual doms will get compared with each other and will check for the new changes. this complete procedure is known as diffing algorithm. Now the new changes will be updated in your Real dom. this procedure is known as Recoinciliation.</li>
+  <li>we neeed them</li>
+<ul>
+  <li>In earlier days when SPA wasn't much popular, rendering was done on the server-side. So for every user interaction/request, the server will send a new page to render.
+
+    In the case of SPA, there will only one document and in that same document, all DOM manipulations will be done. So for complex projects, many unoptimized DOM operations might be used.</li>
+</ul>
+
+</ul>
+
+<li><b>  Q2 : What is SPA</b></li>
+<ul>
+  <li>SPA is that kind of application where the user clicks some links and the data of the page gets updated but the page doesn't reload. Only the content of the page gets updated and the user stays on the same page for the whole application.</li>
+<li>or</li>
+<li>A single-page application (SPA) is a web application or web site that interacts with the user by dynamically rewriting the current page rather than loading entire new pages from a server</li>
+
+
+</ul>
+
+<li><b>  Q3 : What is difference between class and functional component</b></li>
+
+<ul>
+<li> difference between the class and functional components is the syntax. The class component extends to react component which has a render method and then it returns a JSX element while the functional component is a plain javascript function that returns JSX.</li>
+<li>In a class-based component, we have to use this keyword to access the prop or we can destructure it to get our value from the prop</li>
+<li>In a functional component, the prop is being passed directly as an argument to the function and we can now access the prop by using prop.value.</li>
+<li>class component uses life cycle method where as function method doesn't have life cycle method.</li>
+<li>class syntax</li>
+
+</ul>
+
+<li><b>Q4. What does mean by state and its use in react?</b></li>
+<ul>
+  <li>the State of a component is an object that holds some information that may change over the lifetime of the component. </li>
+  <li>the use of State in react?
+    Because state is dynamic, it enables a component to keep track of changing information in between renders and for it to be dynamic and interactive. </li>
+<li> State can only be used within a class component. </li>
+<li>If you anticipate that a component will need to manage state, it should be created as a class component and not a functional one.</li>
+
+  </ul>
+
+<li> <b> Q5. What is JSX and why do we use it instead of js?</b></li>
+<ul>
+  <li>JSX stands for JavaScript XML. It is simply a syntax extension of JavaScript. It allows us to directly write HTML in React (within JavaScript code). It is easy to create a template using JSX in React, but it is not a simple template language instead it comes with the full power of JavaScript.</li>
+<li>JSX is not mandatory to use there are other ways to achieve the same thing but using JSX makes it easier to develop react application.</li>
+<li>JSX produces react elements.</li>
+
+<li>why we use.</li>
+<li>In React, instead of using regular JavaScript for templating, it uses JSX. JSX is a simple JavaScript that allows HTML quoting and uses these HTML tag syntax to render subcomponents. HTML syntax is processed into JavaScript calls of React Framework. We can also write in pure old JavaScript.</li>
+
+<li>syntax of jsx</li>
+</ul>
+
+<pre>
+  import React from 'react';
+import ReactDOM from 'react-dom';
+
+const name = "Learner";
+
+const element = <h4>Hello,
+{ name }.Welcome to GeeksforGeeks.</h4>;
+
+ReactDOM.render(
+	element,
+	document.getElementById("root")
+);
+
+</pre>
+
+<li> <b> Q6. Routing Implementation </b></li>
+<ul>
+  <li>So when we implement routing in react then each of these component
+     can have separate individual urls like /about-us, /home, /contact-us
+     . To implement routing in react we have to add a react module called
+      react-router-dom to our application.</li>
+<li>syntax</li>
+
+
+
+
+</ul>
+<li><b>Q7. Is react library or frameworks?</b></li>
+<ul>
+  <li>React is an open source JavaScript framework, that isn’t actually a framework. But it is currently the most commonly used front-end development technology in the world. React, originally developed by and still maintained by Facebook and supported by an active open source community, is in fact a JS ‘library’.</li>
+</ul>
+
+<li><b> "Q8. What is the Difference between react and react native? Which one is library or framework? </b> </li>
+
+<ul>
+<li>differences. Like the browser code in React is rendered through Virtual DOM while React Native uses Native API’s to render components on mobile.</li>
+
+<li>React uses HTML and with React Native, you need to familiarize yourself with React Native syntax. React Native doesn’t use CSS either. </li>
+ <li>This means you’ll have to use the animated API which comes with React Native to animate different components of your application.</li>
+
+
+<li>Bottom line, React is ideal for building dynamic, high performing, responsive UI for your web interfaces, while React Native is meant to give your mobile apps a truly native feel.  </li>
+</ul>
+
+<li><b>What is the package name you are using for routing</b> </li>
+<ul>
+  <li>we use react router dom</li>
+  <li>React Router DOM is an npm package that enables you to implement dynamic routing in a web app</li>
+  <li>React Router Dom is used to build single-page applications i.e. applications that have many pages or components but the page is never refreshed instead the content is dynamically fetched based on the URL.</li>
+</ul>
+
+<li> <b> Q10.What is package.json</b></li>
+<ul>
+  <li>A package.json file is a JSON document that package managers—like NPM and Yarn—use to store information about a specific project. In other words, a package.json file is a project's metadata file.</li>
+<li>The main purpose of this file is to hold various metadata related to the project. The file is used to provide the information to the node package manager (NPM) that allows identifying the project and its dependencies.</li>
+
+
+
+</ul>
+
+<li><b>How do you use pass data from one component to another </b></li>
+<ul>
+  <li>There can be multiple ways of passing data from one component to another :</li>
+<li>1. Using Props
+  You can use props to pass data from parent to child component. </li>
+<li> Using React ContextAPI </li>
+<li>React ContextAPI gives you the functionality of central state management to manage your application. It means all the application state will be stored in a single place known as Store.</li>
+<li>Store can be thought of as a client-side ‘single source of truth’,</li>
+
+</ul>
+
+<li><b> Q13.What is lazy loading in react ?</b></li>
+<ul>
+  <li>Lazy loading is an important concept in modern web apps which allows us to load  only the resources (scripts, images, etc.) we really needed. 
+  </li>
+  <li>Instead of loading the entire web page and rendering in browser all at once, just render the critical component first, then render the remaining components later or when required.</li>
+
+<li>There are two features to implement lazy loading in React applications.</li>
+<li>React.lazy()
+  React.Suspense</li>
+  <li>React.lazy() is the function that allows implementing the dynamic import for regular components in React.
+    It is introduced in React 16.6.</li>
+    <pre>//Declare
+      const User = React.lazy(() => import('./User.js'));
+      
+      //Consume
+      <div>
+          <User/>
+      </div></pre>
+
+<li>React.suspense has a fallback property which takes the react element that wants to render while the component is being loaded using React.lazy.
+  Basically, it is wrapped in lazy components.</li>
+<pre><div>
+  <Suspense fallback={<div>loading...</div>}
+      <User/>
+  </Suspense>
+</div></pre>
+
+  <li>advantages</li>
+<pre>
+ = Reduce the initial page loading time due to avoid the import all scripts in the applications.
+=Reduce the bandwidth for users due to minimizing the resource loading.
+=It does cost-effective in terms of reducing the load time and bandwidth.
+</pre>
+
+
+
+</ul>
+
+<li>
+  <b>
+  What is an event in react
+</b>
+</li>
+
+<ul>
+<li>An event is an action that is fired as a result of user actions or the action taken by the system. For example, clicking a mouse button, loading a web page, pressing a key, window resizing, and other interactions are called events.</li>
+<li>React has its own system for handling events which is quite similar to how we handle events in DOM elements.</li>
+
+
+</ul>
+
+<li>Difference b/w Stateful and stateless Component</li>
+<ul>
+  <li>stateful comp. is also called as class comp. and stateless comp. is also called as functional comp.</li>
+  <li>In stateless components, the props are displayed like {props.name} but in stateful components, the props and state are rendered like {this.props.name} and {this.state.name}</li>
+  <li> A stateless component renders output which depends upon props value, but a stateful component render depends upon the value of the state.</li>
+  
+  <li>
+    Stateful Protocols require the server to save the state of a process.	Stateless Protocols do not need the server to save the state of a process. 
+  </li>
+ <li>
+  Stateful expects a response and if no answer is received, the request is resent.	In stateless, the client sends a request to a server, which the server responds to based on the state of the request.
+ </li>
+ <li>
+  The server is required to store and save status information and details of sessions.	No server is needed for data storage.
+ </li>
+<li>They are logically heavy to implement.	They are easy to implement.</li>
+<li>It is difficult to code as one of the salient features here is data storage.	It is much easier to code.</li>
+</ul>
+
+<li><b>  How do you switch one component to another</b></li>
+
+
+
+
+
+
+<li><b>Difference between Axios and fetch</b></li>
+
+<ul>
+  <li>Axios has url in request object where as fetch has no url in request object</li>
+  <li>axxios uses the data property and where as fetch uses the body property.</li>
+  <li>Axios is a third party package that can be installed easily but in fetch we have in built into most of browser so no installation is required as such</li>
+  <li>in axios performs automatic transform of JSON data and in fetch is a two step process when handling json data first , to make the actual request and then second to call the json() method on the response</li>
+<li>axios allows cancelling request and request timeout. and in fetch it is not posible.</li>
+
+
+
+
+</ul>
+
+
+
+
+
+
+
+<li><b> What are React Life cycles Explain each one with Example</b></li>
+<ul>
+  <li>The react lifecycle method is used in the React class component. It helps us in creating our state and mutating them. </li>
+<li>Each component in React has a lifecycle that goes through three main phases Mounting, Updating, and Unmounting.</li>
+
+
+<li>The mounting means to put elements into the DOM. React uses virtual DOM to put all the elements into the memory. It has four built-in methods to mount a component namely</li>
+<pre>
+  constructor()
+  getDerivedStateFromProps()
+  render()
+  componentDidMount() 
+</pre>
+
+<li><b>updating</b></li>
+<li>This is the second phase of the React lifecycle. A component is updated when there is a change in state and props React basically has five built-in methods that are called while updating the components.</li>
+<pre>
+  getDerivedStateFromProps()
+shouldComponentUpdate()
+render()
+getSnapshotBeforeUpdate()
+componentDidUpdate()
+</pre>
+
+<li><b>unmounting</b></li>
+<li>The final or the end of the react lifecycle is Unmounting. This is used when a component is removed from the DOM. React has only one built-in method that gets called when a component is unmounted i.e. componentWillUnmount()</li>
+
+<li>sumurry</li>
+<li>The constructor() method is the best place to initialize our state</li>
+<li>The getDerivedStateFromProps() is a rarely used lifecycle method and is the best place to set the state object based on the initial props.</li>
+<li>The shouldComponentUpdate() specifies whether React should continue with the rendering or not.</li>
+<li>The render() method is the most used and compulsory lifecycle method.</li>
+<li>The getSnapshotBeforeUpdate() method has access to the props and state even after the update.</li>
+<li>The componentDidMount() is the most common and widely used lifecycle method and is called after the component is rendered. You can also use this method to call external data from the API.</li>
+<li>The componentDidUpdate() method is called after the component is updated in the DOM and is the best place in updating the DOM in response to the change of props and state.</li>
+<li>The componentWillUnmount() happens just before the component unmounts and is destroyed and is used for cleanup actions like canceling API calls.</li>
+
+</ul>
+
+<li><b>What is UseState Hook </b></li>
+<ul>
+
+  <li>useStatehook is a special function which takes one argument. The argument passed to useState is initial state. It returns an array of two entries. The first element is the initial state and the second is a function which is used for updating state.</li>
+  <li>The React useState Hook allows us to track state in a function component.
+
+    State generally refers to data or properties that need to be tracking in an application</li>
+
+
+
+    <li>To use the useState Hook, we first need to import it into our component.</li>
+
+  </ul>
+
+<li><b>useEffect</b></li>
+<ul>
+  <li>
+    The hook useEffect is one of the important React hooks that you must know. It allows you to perform side effects in functional components whenever a change happens. So with the useEffect hook, you can do many things in React such as fetching data, working with the DOM, and much more.
+  </li>
+  <li>By default, the useEffect hook runs after the first render and after every update. React updates the DOM by the time it runs the effects.</li>
+</ul>
+<li>  What is UseReducer Hook</li>
+<ul>
+  <li>The useReducer Hook is similar to the useState Hook.</li>
+  <li>If you find yourself keeping track of multiple pieces of state that rely on complex logic, useReducer may be useful.</li>
+  <li>The useReducer hook takes three arguments including reducer, initial state, and the function to load the initial state lazily.</li>
+</ul>
+
+<h1>day3</h1>
+<li>what is useMemo</li>
+<ul>
+  <li>The useMemo is a hook used in the functional component of react that returns a memoized value. </li>
+  <li>The useMemo Hook only runs when one of its dependencies update.</li>
+  <li>This can improve performance.</li>
+  <li>The useMemo and useCallback Hooks are similar.</li>
+  <li>The main difference is that useMemo returns a memoized value and useCallback returns a memoized function.</li>
+</ul>
+<li><b>what is useRef</b></li>
+<ul>
+<li>The useRef Hook allows you to persist values between renders.</li>
+
+<li>It can be used to store a mutable value that does not cause a re-render when updated.</li>
+<li>It can be used to access a DOM element directly.</li>
+<li>If we tried to count how many times our application renders using the useState Hook, we would be caught in an infinite loop since this Hook itself causes a re-render.</li>
+<li>To avoid this, we can use the useRef Hook.</li>
+
+</ul>
+
+
+<li><b>what is Context API</b></li>
+<ul>
+  <li>Context APIs are used to set the global data and this data 
+    can now be accessed in any of the children's components
+     without the need to pass it through every parent component.</li>
+<li>example</li>
+<li>Suppose there are three components namely, A, B and C. A is the parent component of B and B is the parent component of C. So, our component structure is as follows − A→B→C.</li>
+<li>We have defined some data in A and want to handle it in component C.</li>
+<li>we can use Context API which is used to handle the data centrally which can be accessed by any component without passing it to every parent component. </li>
+
+
+
+</ul>
+
+
+<li><b>callback vs usecallback</b></li>
+<ul>
+
+
+
+<li>The useCallback hook is used when you have a component in which the child is rerendering again and again without need. Pass an inline callback and an array of dependencies. useCallback will return a memoized version of the callback that only changes if one of the dependencies has changed.</li>
+<li>A callback is a function that is passed as a parameter to another function.</li>
+<li>A callback function can run after another function has finished</li>
+
+</ul>
+<li><b>prop drilling</b></li>
+<ul>
+<li>props=>Components in React can be passed some parameters. These parameters are generally named props.</li>
+ <li>Prop drilling is basically a situation when the same data is being sent at almost every level due to requirements in the final level.</li>
+<li></li>
+
+
+</ul>
+<li><b>state uplifting</b></li>
+<ul>
+<li> every component in React has its own state. Because of this sometimes data can be redundant and inconsistent. So, by Lifting up the state we make the state of the parent component as a single source of truth and pass the data of the parent in its children.</li>
+<li>If we have 2 components in our App. A -> B where, A is parent of B. keeping the same data in both Component A and B might cause inconsistency of data. </li>
+<li> If we have 3 components in our App.</li>
+<li>Where A is the parent of B and C. In this case, If there is some Data only in component B but, component C also wants that data. We know Component C cannot access the data because a component can talk only to its parent or child (Not cousins).</li>
+<li>To solve this, we will Lift the state of component B and component C to component A.</li>
+
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ol>
+
+
+
+
+
+
+
+
+
+  <script src="./script.js"></script>
+</body>
+</html>
