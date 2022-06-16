@@ -930,7 +930,14 @@ componentDidUpdate()
 <li>To solve this, we will Lift the state of component B and component C to component A.</li>
 
 </ul>
-
+<li>difference betwween usecontext and use effect</li>
+<ul>
+<li>Context provides a way to pass data or state through the component tree without having to pass props down manually through each nested component. It is designed to share data that can be considered as global data for a tree of React components, such as the current authenticated user or theme(e.g. color, paddings, margins, font-sizes).</li>
+<li>
+    The hook useEffect is one of the important React hooks that you must know. It allows you to perform side effects in functional components whenever a change happens. So with the useEffect hook, you can do many things in React such as fetching data, working with the DOM, and much more.
+  </li>
+  <li>By default, the useEffect hook runs after the first render and after every update. React updates the DOM by the time it runs the effects.</li>
+</ul>
 
 
 
